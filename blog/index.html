@@ -6,7 +6,7 @@ title: Web Programming Page  <!-- blog?-->
 <ul class="posts">
   {% for post in site.posts %} <!-- for loop? for generating html for all posts in blog -->
     <li>
-      <span> {{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}"> {{ post.title }} </a> <!-- idk if this needs to be one line so im leaving it -->
+      <span> {{ post.date | date_to_string }}</span> » <a href="/blog{{ post.url }}" title="{{ post.title }}"> {{ post.title }} </a> <!-- idk if this needs to be one line so im leaving it -->
     </li>
   {% endfor %} <!-- close loop -->
 </ul>
